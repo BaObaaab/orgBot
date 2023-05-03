@@ -9,13 +9,16 @@ router: Router = Router()
 
 
 @router.message(CommandStart())
-async def process_command_start(message: Message):
+async def process_start_command(message: Message):
     await message.answer(text=LEXICON_KEYBOARDS_RU['/start'], reply_markup=menu_keyboard)
+
+
+@router.message(Command(commands='help'))
+async def process_help_command(message: Message):
+    await message.answer(LEXICON_KEYBOARDS_RU['/help'])
 
 
 @router.callback_query(Text(text='button_menu_was_pressed'))
 async def process_pressed_menu(callback: CallbackQuery):
     await callback.message.edit_text(text='seome text', reply_markup=set_list_buttons.as_markup())
 
-
-# @router.callback_query(Text(text=''))
