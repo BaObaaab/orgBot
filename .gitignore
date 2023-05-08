@@ -1,5 +1,5 @@
 .env
-lexicon
+lexicon/lexicon_ru.py
 
 
 
