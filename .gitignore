@@ -1,5 +1,6 @@
 .env
 bot_organized.db
+lexicon_ru.py
 
 .mypy_cache/
 .vscode/
