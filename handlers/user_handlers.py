@@ -4,6 +4,7 @@ from aiogram.types import Message, CallbackQuery
 from lexicon.lexicon_ru import LEXICON_KEYBOARDS_RU
 from keyboards.set_list_menu import set_list_buttons
 from keyboards.menu_inline_keyboard import menu_keyboard
+from database.database import check_user, add_users
 
 router: Router = Router()
 
