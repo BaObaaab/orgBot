@@ -1,7 +1,7 @@
 .env
+lexicon_ru.py
 bot_organized.db
 
-lexicon/lexicon_ru.py
 
 .mypy_cache/
 .vscode/
