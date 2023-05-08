@@ -1,7 +1,6 @@
 .env
+lexicon
 
-lexicon/lexicon_ru.py
-bot_organized.db
 
 
 .mypy_cache/
